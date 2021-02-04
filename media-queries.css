@@ -1,0 +1,301 @@
+:root{
+    --primary-dark-color: #302033;
+    --primary-background-color: #463C4B;
+    --primary-background-lighter-color: #564A5C;
+
+    --layout-grey-color: #A4A4A4;
+    --layout-form-color: #302033;
+    --layout-grey-font: #D1CECE;
+    --layout-nav-color: red;
+
+    --interaction-color: #F65C44;
+    --interaction-color-clicked: #fc4226;
+    --ripple-color: #fa7f6c;
+
+
+}
+
+
+
+
+@media(max-width: 963px){
+
+    /* Header  */
+    .nav-link{
+        font-size: 1.5rem;
+    }
+
+    /* Footer  */
+    .footer-part {
+    min-width: 50%;
+    }
+
+
+    /* Showcase  */
+    .text-title{
+        font-size: 3em;
+    }
+
+    section.showcase{
+        background-position: center;
+    }
+
+    .tab-text{
+        font-size: 1.3rem;
+    }
+
+    .text-subtitle{
+        font-size: 1.5em;
+    }
+
+    .tab-body{
+        height: 60vh;
+    }
+
+    .tab-body:nth-child(2){
+        height: 80vh;
+    }
+    
+
+    .tab-body img{
+        width: 200px;
+    }
+
+    .left-part {
+        width: 80%;
+    }
+
+    .left-part .container{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right-part{
+        width: 40%;
+        justify-content: flex-start;
+    }
+
+    .tab-description {
+        font-size: 2.3em;
+    }
+
+    .btn-large{
+        font-size: 2rem;
+    }
+
+    /* About  */
+        /* Newsletter  */
+    .newsletter-title{
+        font-size: 1.5rem;
+    }
+
+
+    .subscribe{
+        width: 80vw;
+    }
+
+
+
+
+    .about-title{
+        font-size: 2rem;
+    }
+
+    
+
+
+
+
+
+
+}
+
+@media(max-width: 785px){
+    .logo{
+        width: 90%;
+    }
+
+
+    /* About  */
+    .about-main .container{
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .right-card{
+        height: 25em;
+    }
+
+    .subscribe .email{
+        padding-left: 0.2em;
+        font-size: 1.1rem;
+    }
+
+}
+
+
+
+
+
+
+@media(max-width: 691px){
+
+    /* Showcase  */
+    
+
+    .nav-links.clicked{
+        transform: translateX(0%);
+    }
+
+    .nav-links{
+        display: flex;
+        align-items: center;
+        padding-top: 2em;
+        justify-content: flex-start;
+        gap: 2em;
+        flex-direction: column;
+        transition: all 0.7s ease;
+        background-color: var(--layout-nav-color);
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 2000;
+        transition: transform 0.7s ease;
+        transform: translate(100%, 0%);
+        
+
+    }
+
+
+    .nav-menu{
+        display: block;
+        width: 90px;
+        height: 50px;
+        padding: 1em;
+        font-size: 1.7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid var(--interaction-color);
+        color: var(--interaction-color);
+        padding: 0.2em;
+        font-weight: 500;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .nav-menu > span{
+        pointer-events: none;
+    }
+
+    
+    .tab-description{
+        font-size: 2rem;
+    }
+
+
+    .tab-text{
+        display: none;
+    }
+
+
+    /* About  */
+    .newsletter .container{
+        box-sizing: none;
+        flex-direction: column;
+        padding: 1em;
+    }
+
+
+
+}
+
+
+@media(max-width: 600px){
+
+
+
+    .btn-showcase{
+        width: 60%;
+        height: 50px;
+        font-size: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-title{
+        font-size: 2rem;
+    }
+
+    .text-subtitle{
+        font-size: 1em;
+    }
+
+
+    .tab{
+        width: 20%;
+    }
+
+    .current-tab{
+        border-bottom: 10px solid transparent;
+    }
+
+    .tab-body{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        gap: 2em;
+        padding: 4em 0;
+    }
+
+    .left-part{
+        height: auto;
+        width: 100%;
+    }
+
+    .tab-description{
+        width: 100%;
+    }
+
+    .right-part{
+        max-height: 70%;
+    }
+
+    /* About  */
+    .right-card{
+        display: none;
+    }
+
+    .newsletter{
+        padding: 1em;
+        box-sizing: content-box;
+    }
+
+    .newsletter-title{
+        text-align: center;
+        width: 150%;
+        font-size: 1.2rem;
+    }
+
+    .subscribe{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email{
+        height: 2.5rem;
+    }
+
+    section.newsletter .container .btn-medium{
+        width: 100%;
+    }
+
+
+}
+
+

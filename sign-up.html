@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Pravel</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media-queries.css">
+    <script src="./script/ripple.js" defer></script>
+    <script src="./script/captcha.js" defer></script>
+    <script src="./script/nav.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div><a href="index.html"><img src="./images/img_logo.png" class="logo" alt=""></a></div>
+            <div class="nav-menu"><span>Menu</span></div>
+            <ul class="nav-links">
+                <li><a href="./travel.html" class="nav-link">Travel</a></li>
+                <li><a href="./sign-in.html" class="nav-link">Account</a></li>
+                <li><a href="./about.html" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="sign-in">
+        <div class="container">
+            <section class="side-section">
+                <div class="text-container">
+                    <h1>Log In Everyday for daily rewards</h1>
+                    <p>Best airline in the world</p>
+                </div>
+                <img src="./images/img_account_1.png" alt="">
+            </section>
+            <section class="form">
+                <div class="form-container">
+                    <h1 class="form-title">Sign Up</h1>
+                    <form>
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+                        <div class="captcha-box">
+                            <div class="main-captcha">
+                                <div class="button-container">
+                                    <div class="rectangle-btn"></div>
+                                    <div class="loading"></div>
+                                    <div class="checked"></div>
+                                </div>
+                                <div class="captcha-text-container">
+                                    <p>Are you a robot?</p>
+                                </div>
+                            </div>
+
+                            <div class="pop-up-box">
+                                <div class="boxes-head">
+                                    <p>Select all boxes with</p>
+                                    <h2>Checkmarks</h2>
+                                </div>
+                                <div class="boxes">
+                                    <div class="box" id="box-0">1</div>
+                                    <div class="box" id="box-1">1</div>
+                                    <div class="box" id="box-2">1</div>
+                                    <div class="box" id="box-3">1</div>
+                                    <div class="box" id="box-4">1</div>
+                                    <div class="box" id="box-5">1</div>
+                                    <div class="box" id="box-6">1</div>
+                                    <div class="box" id="box-7">1</div>
+                                    <div class="box" id="box-8">1</div>
+                                </div>
+                                <div class="captcha-buttons">
+                                    <div class="btn btn-retry">Retry</div>
+                                    <div class="btn btn-verify">verify</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-submit">Log In</button>
+                    </form>
+                    <div class="form-bottom">
+                        <h2 class="have-account">Already have an account? <a href="sign-in.html">Sign In</a></h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-part">
+                <p>FAQ</p>
+                <p>Flight Rules</p>
+                <p>Terms and Condition</p>
+            </div>
+            <div class="footer-part">
+                <p>Help Center</p>
+                <p>Corporate Information</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="footer-part">
+                <p>Redeem Gift Cards</p>
+                <p>Privacy</p>
+                <p>Preferences</p>
+            </div>
+            <div class="footer-part">
+                <p>Buy Gift Cards</p>
+                <p>Legal Notices</p>
+                <p>Made by Richard Manansala</p>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
